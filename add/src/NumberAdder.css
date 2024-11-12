@@ -1,0 +1,56 @@
+/* Center the container with a subtle background color and rounded corners */
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+/* Input fields with vibrant border and focus color */
+.input-field {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Change border color when focused */
+.input-field:focus {
+    border-color: #FF6347; /* Tomato color when focused */
+}
+
+/* Style the button with gradient color and shadow */
+.add-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #FF6347, #FF4500); /* Gradient from tomato to orange red */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+/* Change background on hover */
+.add-button:hover {
+    background: linear-gradient(90deg, #FF4500, #FF6347); /* Reverse gradient */
+}
+
+/* Style the result display with bold text and vivid color */
+.result h2 {
+    margin: 10px 0;
+    color: #4CAF50; /* Green text color */
+    font-weight: bold;
+    font-size: 20px;
+}

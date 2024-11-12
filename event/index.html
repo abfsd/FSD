@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f4f8;
+        }
+
+        /* Container styling */
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Heading styling */
+        .container h1 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Label styling */
+        .container label {
+            display: block;
+            margin-top: 1rem;
+            color: #555;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        /* Input and select styling */
+        .container input,
+        .container select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.3rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #333;
+            outline: none;
+        }
+
+        /* Input focus style */
+        .container input:focus,
+        .container select:focus {
+            border-color: #007bff;
+        }
+
+        /* Button styling */
+        .container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 0.7rem;
+            margin-top: 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .container button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 500px) {
+            .container {
+                padding: 1.5rem;
+            }
+            .container h1 {
+                font-size: 1.5rem;
+            }
+            .container button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Registration</h1>
+        <form action="http://localhost:8000/register" method="POST">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name="college" required>
+            
+            <label for="department">Department Name:</label>
+            <input type="text" id="department" name="department" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

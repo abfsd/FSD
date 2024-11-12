@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Hariharan",
+    "lastName": "R",
+    "sex": "male",
+    "college": "Sri Ramakrishna Engineering college",
+    "department": "Artificial intelligence and Data Science",
+    "phone": "8015371770"
+  },
+  {
+    "firstName": "Hariharan",
+    "lastName": "R",
+    "sex": "male",
+    "college": "Sri Ramakrishna Engineering College",
+    "department": "AI&DS",
+    "phone": "8015371770"
+  },
+  {
+    "firstName": "Anthony",
+    "lastName": "Vijay",
+    "college": "SREC",
+    "department": "AI&DS",
+    "phone": "9345728326"
+  },
+  {
+    "firstName": "Anthony",
+    "lastName": "Vijay",
+    "college": "SREC",
+    "department": "AI&DS",
+    "phone": "9345728326"
+  }
+]
