@@ -1,0 +1,23 @@
+#1.Insertvalues into the createdcollection
+db.details.insertMany([
+    {
+        _id: ObjectId(), 
+        First_name: 'Dhanush', 
+        Last_name: 'Kumar', 
+        College_name: 'SREC', 
+        Department: 'AI & DS', 
+        Phone_no: 8098391340
+    }
+])
+
+#2.Update the collection
+db.details.updateMany(
+    { Department: 'IT' }, // Filter
+    { $set: { Department: 'AI & DS' } } // Update operation
+)
+
+#3. Findthe collection usingPretty()
+db.details.find().pretty()
+
+#4. Remove the collection
+db.details.deleteMany({ Department: 'IT' })
