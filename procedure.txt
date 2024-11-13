@@ -1,0 +1,18 @@
+5 and 6 exp
+
+cd add/blog-app
+
+npm install
+
+npm start
+
+
+
+#8 and 9 exp
+
+cd event
+npm install mongoose
+
+npm install express
+
+node example.js
